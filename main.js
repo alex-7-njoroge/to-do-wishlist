@@ -18,6 +18,7 @@ function addTask () {
      inputBox.value =''
      saveData()
 }
+// addind event listener
 listContainer.addEventListener(
     'click', (event) => {
         if (event.target.tagName === 'LI') {
@@ -29,6 +30,7 @@ listContainer.addEventListener(
         }
     }
 )
+// to save data 
 function saveData () {
     localStorage.setItem('data',xlist.innerHTML)
 }
