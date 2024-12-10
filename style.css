@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.mycontainer {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.to-do {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#inputBox {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c5eaf;
+    color: rgb(230, 14, 14);
+    border: none;
+    border-radius: 4px 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#xlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#xlist li {
+    padding: 10px;
+    background-color: #268a1db9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#xlist li.completed {
+    text-decoration: line-through;
+    color: rgb(128, 128, 128);
+}
+
+#xlist span {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+#xlist span:hover {
+    color: #cc0000;
+}
